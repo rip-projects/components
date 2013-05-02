@@ -1,0 +1,58 @@
+<!doctype html>
+<html manifest="manifest.appcache.php" data-interval="5000">
+<head>
+    <meta charset="UTF-8">
+    <title>Resource Cache</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="../../vendor/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen" />
+
+    <link href="./css/demo.css" rel="stylesheet" media="screen" />
+
+    <script src="../../vendor/jquery/jquery-1.9.1.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../lib/rcache/rcache.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="../">/</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li><a href="./">Resource Cache</a></li>
+                        <li><a href="#update">Version: <span class="cache-version" data-cache-version>0.0.0</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="body">
+        <h1>Hi Programmer!</h1>
+        <p>This page will demonstrate how Resource Cache works. </p>
+
+        <div class="clearfix"></div>
+
+        <div class="demo-panel demo-js">
+            <script type="text/javascript" src="js/demo.js"></script>
+        </div>
+
+        <div class="demo-panel demo-css">
+            <div class="demo-object"></div>
+        </div>
+
+        <div class="demo-panel demo-html">
+        </div>
+        <script>
+            $('.demo-html').load('html/demo.php');
+        </script>
+    </div>
+
+</body>
+</html>

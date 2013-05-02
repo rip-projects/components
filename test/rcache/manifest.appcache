@@ -1,0 +1,13 @@
+CACHE MANIFEST
+# version: 0.0.1
+
+CACHE:
+index.html
+css/demo.css
+js/demo.js
+html/demo.php
+# cache: ../../vendor
+# cache: ../../lib/rcache/rcache.js
+
+NETWORK:
+*

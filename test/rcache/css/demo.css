@@ -1,0 +1,26 @@
+.demo-panel {
+    border: 1px solid blue;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.span4 .demo-panel {
+    margin: initial;
+}
+
+.demo-object {
+    background-color: #900;
+    width:10px;
+    height:10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.demo-object:after {
+    content: 'this_content_generated_from_css';
+    left: 15px;
+    position: absolute;
+    top: -5px;
+}
